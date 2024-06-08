@@ -1,84 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morten Haulik – Your Expert in VR, AR, and XR Technologies</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="menu">
-        <a href="index.html">Dansk</a>
-        <a href="#about">About Morten Haulik</a>
-        <a href="#book">Book as Keynote Speaker</a>
-        <a href="#workshop">Book Workshop</a>
-        <a href="#consultant">XR Consultant</a>
-    </div>
-    <div class="content">
-        <div class="left"></div>
-        <div class="right">
-            <section id="about">
-                <h2>About Morten Haulik</h2>
-                <p>Morten Haulik is a leading expert in Virtual Reality (VR), Augmented Reality (AR), and Extended Reality (XR), based in Copenhagen. Over the past decade, Morten has worked professionally with VR and AR, earning recognition both nationally and internationally. He has contributed as an expert to prominent media outlets such as Ekstrabladet, Jyllandsposten, Børsen, Ingeniøren, Radio4, DR, Berlingske, and many others. He also played a key role in producing the VR episode for DR2’s "So Ein Ding".</p>
-            </section>
-            <section id="book">
-                <h2>Book Morten as a Keynote Speaker or Presenter</h2>
-                <p>Looking for insights into the latest trends and developments in VR, AR, and XR? Want to inspire your team or audience with cutting-edge knowledge? Book Morten Haulik as a keynote speaker or presenter. Morten delivers engaging and informative presentations that both inspire and challenge audiences. <a href="mailto:BookMortenHaulik@gmail.com">Click here</a> to book a talk now!</p>
-            </section>
-            <section id="workshop">
-                <h2>Book a Talk or Workshop with Morten Haulik</h2>
-                <p>Morten offers talks and workshops on topics like Virtual Reality, Augmented Reality, future technology, and innovation. Whether it's for a company, a conference, or an educational institution, Morten tailors his content to your audience. His presentations and workshops are designed to provide maximum value and insight.</p>
-                <p>What Clients Are Saying:</p>
-                <p>"Morten Haulik captivated our audience from the very first moment. His knowledge and enthusiasm for VR and AR are both infectious and inspiring." – Jens Jensen, Tech Conference</p>
-                <p>"Morten delivered an outstanding workshop that really opened our eyes to the possibilities within VR and AR. His practical approach and deep insight made a significant impact on our team." – Anna Andersen, Head of Innovation</p>
-            </section>
-            <section id="consultant">
-                <h2>XR Consultant – Developing Future Solutions</h2>
-                <p>As an experienced XR consultant, Morten Haulik assists companies in developing and implementing advanced XR solutions that meet the highest industry standards. With a deep understanding of both the technology and the market, Morten can guide your team through the entire development process—from concept to finished product. His expertise ensures that your XR solutions are not only innovative but also practical and sustainable. <a href="mailto:BookMortenHaulik@gmail.com">Click here</a> to contact Morten.</p>
-            </section>
-            <section>
-                <h2>Background</h2>
-                <p>Morten Haulik began his journey into the world of technology while studying Information Science at the University of Copenhagen. A hobby project, where he built a homemade Virtual Reality headset, went viral on Facebook, leading to a career opportunity with Khora Virtual Reality, Europe's first VR production company.</p>
-                <p>Since then, Morten has been a prominent figure in the Danish startup and tech landscape. In his current role as Entrepreneur in Residence at the University of Copenhagen Lighthouse, he helps students turn their research into successful startups.</p>
-            </section>
-            <section>
-                <h2>Mentor and Judge</h2>
-                <p>Morten serves as a mentor and judge in various innovation and entrepreneurship programs, including:</p>
-                <ul>
-                    <li>Fonden for Entreprenørskab</li>
-                    <li>University of Copenhagen</li>
-                </ul>
-                <h2>Alumni</h2>
-                <p>Morten has also been involved in:</p>
-                <ul>
-                    <li>Founders of Tomorrow</li>
-                    <li>Roche NewGen Challenge</li>
-                    <li>Venture Cup</li>
-                    <li>Tag Order, Dagbladet Information</li>
-                    <li>Health Innovators</li>
-                </ul>
-            </section>
-            <section>
-                <h2>Podcast Appearances</h2>
-                <p>Morten has appeared as an expert in numerous podcasts, sharing his insights and discussing the latest trends in VR, AR, and technology.</p>
-            </section>
-            <section>
-                <h2>Follow Morten Haulik</h2>
-                <p>Stay updated with Morten’s latest projects and insights by following him on LinkedIn and Twitter.</p>
-            </section>
-        </div>
-    </div>
-    <audio id="hoverSound" src="hover.wav" preload="auto"></audio>
-    <audio id="clickSound" src="click.mp3" preload="auto"></audio>
-    <script>
-        document.querySelectorAll('.menu a').forEach(link => {
-            link.addEventListener('mouseover', () => {
-                document.getElementById('hoverSound').play();
-            });
-            link.addEventListener('click', () => {
-                document.getElementById('clickSound').play();
-            });
-        });
-    </script>
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #111;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.left {
+    flex: 2;
+    overflow-y: auto;
+    max-height: 90vh;
+    padding-right: 20px;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+a {
+    color: #0066cc;
+}
+
+a:hover {
+    color: #004099;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .right {
+        margin-top: 20px;
+    }
+
+    .left {
+        padding-right: 0;
+    }
+}
