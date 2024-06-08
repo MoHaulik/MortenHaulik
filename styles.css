@@ -1,20 +1,69 @@
 body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     overflow: hidden;
-    background-color: black; /* Set background color to black */
 }
 
-#video-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#video-bg {
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: font-weight 0.3s;
+}
+
+.menu a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.left {
+    flex: 1;
+    background: url('MortenHaulikBillede.png') no-repeat center center;
+    background-size: cover;
+    cursor: url('eye.png'), auto;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .left, .right {
+        flex: none;
+        width: 100%;
+        height: 50%;
+    }
 }
