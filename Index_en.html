@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work Mode Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="timer" class="timer hidden">
+      <span id="minutes">00</span>:<span id="seconds">00</span>
+    </div>
+    <div id="statistics" class="statistics hidden">
+      <h2>Statistics</h2>
+      <div id="total-time">Total Time: 0 mins</div>
+      <div id="average-time">Average Session: 0 mins</div>
+      <div id="longest-session">Longest Session: 0 mins</div>
+      <canvas id="work-chart" width="400" height="200"></canvas>
+    </div>
+    <div id="messages" class="messages"></div>
+    <div id="session-history" class="session-history hidden">
+      <h2>Session History</h2>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+  <img id="vegeta-casual" src="vegeta_casual.gif" alt="Vegeta Casual" onclick="startStopWorkMode()">
+  <img id="vegeta-super" src="vegeta_super.gif" alt="Vegeta Super Saiyan" class="hidden" onclick="startStopWorkMode()">
+
+  <script src="script.js"></script>
+</body>
+</html>
