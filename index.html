@@ -4,63 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morten Haulik – Din Ekspert inden for VR, AR og XR Teknologier</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .menu {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.8);
-            z-index: 1000;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .menu a {
-            text-decoration: none;
-            color: black;
-            margin: 0 10px;
-            font-size: 18px;
-        }
-        .content {
-            display: flex;
-            flex: 1;
-            overflow-y: auto;
-        }
-        .left {
-            flex: 1;
-            background: url('MortenHaulikBillede.png') no-repeat center center;
-            background-size: cover;
-        }
-        .right {
-            flex: 1;
-            padding: 20px;
-            font-size: 18px;
-        }
-        section {
-            padding: 20px 0;
-        }
-        @media (max-width: 768px) {
-            .content {
-                flex-direction: column;
-            }
-            .left, .right {
-                flex: none;
-                width: 100%;
-                height: 50%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="menu">
@@ -90,5 +34,17 @@
             </section>
         </div>
     </div>
+    <audio id="hoverSound" src="hover.wav" preload="auto"></audio>
+    <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+    <script>
+        document.querySelectorAll('.menu a').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                document.getElementById('hoverSound').play();
+            });
+            link.addEventListener('click', () => {
+                document.getElementById('clickSound').play();
+            });
+        });
+    </script>
 </body>
 </html>
