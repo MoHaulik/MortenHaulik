@@ -4,69 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morten Haulik – Din Ekspert inden for VR, AR og XR Teknologier</title>
-    <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            overflow: hidden;
-        }
-        .menu {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.8);
-            z-index: 1000;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .menu a {
-            text-decoration: none;
-            color: black;
-            margin: 0 10px;
-            font-size: 18px;
-            transition: font-weight 0.3s;
-        }
-        .menu a:hover {
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .content {
-            display: flex;
-            flex: 1;
-            overflow-y: auto;
-        }
-        .left {
-            flex: 1;
-            background: url('MortenHaulikBillede.png') no-repeat center center;
-            background-size: cover;
-            cursor: url('eye.png'), auto;
-        }
-        .right {
-            flex: 1;
-            padding: 20px;
-            font-size: 18px;
-        }
-        section {
-            padding: 20px 0;
-        }
-        @media (max-width: 768px) {
-            .content {
-                flex-direction: column;
-            }
-            .left, .right {
-                flex: none;
-                width: 100%;
-                height: 50%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="menu">
@@ -80,7 +18,7 @@
         <div class="right">
             <section id="om">
                 <h2>Om Morten Haulik</h2>
-                <p>Morten Haulik er en førende ekspert inden for Virtual Reality (VR), Augmented Reality (AR) og Extended Reality (XR), baseret i København. I løbet af det sidste årti har Morten arbejdet professionelt med VR og AR, og hans ekspertise er blevet anerkendt både nationalt og internationalt. Morten har bidraget som ekspert i medier som Ekstrabladet, Jyllandsposten, Børsen, Ingeniøren, Radio4, DR, Berlingske, og mange flere. Han har også været medvirkende til produktionen af episoden om VR i DR2’s "So Ein Ding".</p>
+                <p>Morten Haulik er en førende ekspert inden for Virtual Reality (VR), Augmented Reality (AR) og Extended Reality (XR), baseret i København. I det seneste årti har Morten arbejdet professionelt med VR og AR, og hans ekspertise er blevet anerkendt både nationalt og internationalt. Morten har bidraget som ekspert i prominente medier som Ekstrabladet, Jyllandsposten, Børsen, Ingeniøren, Radio4, DR, Berlingske, og mange flere. Han har også spillet en nøglerolle i produktionen af episoden om VR i DR2’s "So Ein Ding".</p>
             </section>
             <section id="book">
                 <h2>Book Morten som Keynote Speaker eller Foredragsholder</h2>
@@ -88,11 +26,44 @@
             </section>
             <section id="bestil">
                 <h2>Bestil et Foredrag eller Workshop med Morten Haulik</h2>
-                <p>Morten tilbyder foredrag og workshops om emner som Virtual Reality, Augmented Reality, fremtidens teknologi, og innovation. Uanset om det er for en virksomhed, en konference eller en uddannelsesinstitution, skræddersyr Morten sit indhold til dit publikum. Hans foredrag og workshops er designet til at levere maksimal værdi og indsigt. <a href="mailto:BookMortenHaulik@gmail.com">Klik her</a> for at bestille et foredrag eller en workshop nu!</p>
+                <p>Morten tilbyder foredrag og workshops om emner som Virtual Reality, Augmented Reality, fremtidens teknologi og innovation. Uanset om det er for en virksomhed, en konference eller en uddannelsesinstitution, skræddersyr Morten sit indhold til dit publikum. Hans foredrag og workshops er designet til at levere maksimal værdi og indsigt.</p>
+                <p>Hvad tidligere kunder siger:</p>
+                <p>"Morten Haulik formåede at fange vores publikums opmærksomhed fra første øjeblik. Hans viden og entusiasme for VR og AR er smittende og inspirerende." – Jens Jensen, Teknologikonference</p>
+                <p>"Morten leverede en fantastisk workshop, der virkelig åbnede vores øjne for mulighederne inden for VR og AR. Hans praktiske tilgang og dybe indsigt gjorde en kæmpe forskel for vores team." – Anna Andersen, Innovationschef</p>
             </section>
             <section id="konsulent">
                 <h2>XR Konsulent – Udvikling af Fremtidens Løsninger</h2>
-                <p>Som erfaren XR-konsulent hjælper Morten Haulik virksomheder med at udvikle og implementere avancerede XR-løsninger, der lever op til de højeste standarder inden for feltet. Med en dyb forståelse af både teknologien og markedet, kan Morten guide dit team gennem hele udviklingsprocessen – fra koncept til færdigt produkt. Hans ekspertise sikrer, at jeres XR-løsninger ikke kun er innovative, men også praktiske og bæredygtige. <a href="mailto:BookMortenHaulik@gmail.com">Klik her</a> for at komme i kontakt med Morten.</p>
+                <p>Som erfaren XR-konsulent hjælper Morten Haulik virksomheder med at udvikle og implementere avancerede XR-løsninger, der lever op til de højeste standarder inden for feltet. Med en dyb forståelse af både teknologien og markedet kan Morten guide dit team gennem hele udviklingsprocessen – fra koncept til færdigt produkt. Hans ekspertise sikrer, at jeres XR-løsninger ikke kun er innovative, men også praktiske og bæredygtige. <a href="mailto:BookMortenHaulik@gmail.com">Klik her</a> for at komme i kontakt med Morten.</p>
+            </section>
+            <section>
+                <h2>Baggrund</h2>
+                <p>Morten Haulik startede sin rejse i teknologiens verden, mens han studerede Informationsvidenskab på Københavns Universitet. Et hobbyprojekt, hvor han byggede et hjemmebygget Virtual Reality-headset, gik viralt på Facebook og åbnede dørene til en karriere hos Khora Virtual Reality, Europas første VR-produktionsselskab.</p>
+                <p>Siden da har Morten været en fremtrædende figur i det danske startup- og teknologilandskab. I sin nuværende rolle som Entrepreneur in Residence hos Københavns Universitet Lighthouse hjælper han studerende med at omdanne deres forskning til succesfulde startups.</p>
+            </section>
+            <section>
+                <h2>Mentor og Dommer</h2>
+                <p>Morten bidrager som mentor og dommer i forskellige innovations- og entreprenørskabsprogrammer, herunder:</p>
+                <ul>
+                    <li>Fonden for Entreprenørskab</li>
+                    <li>Københavns Universitet</li>
+                </ul>
+                <h2>Alumni</h2>
+                <p>Morten har også været involveret i:</p>
+                <ul>
+                    <li>Founders of Tomorrow</li>
+                    <li>Roche NewGen Challenge</li>
+                    <li>Venture Cup</li>
+                    <li>Tag Order, Dagbladet Information</li>
+                    <li>Health Innovators</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Podcast Deltagelser</h2>
+                <p>Morten har deltaget som ekspert i en række podcasts, hvor han deler sin indsigt og diskuterer de nyeste trends inden for VR, AR og teknologi.</p>
+            </section>
+            <section>
+                <h2>Følg Morten Haulik</h2>
+                <p>Hold dig opdateret med Mortens seneste projekter og indsigter ved at følge ham på LinkedIn og Twitter.</p>
             </section>
         </div>
     </div>
