@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morten Haulik</title>
+    <title>Morten Haulik – Din Ekspert inden for VR, AR og XR Teknologier</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        @font-face {
-            font-family: 'Founders Grotesk';
-            src: url('FoundersGrotesk-Regular.otf') format('opentype');
-        }
-    </style>
 </head>
 <body>
-    <div class="menu">
-        <a href="#om">Om Morten Haulik</a>
-        <a href="#book">Book som Keynote Speaker</a>
-        <a href="#bestil">Bestil Workshop</a>
-        <a href="#konsulent">XR Konsulent</a>
-        <a href="#" id="toggleLanguage">English</a>
-        <audio id="hoverSound" src="hover.wav"></audio>
-        <audio id="clickSound" src="click.mp3"></audio>
+    <div id="pause-overlay">
+        <img src="Baggrund.png" alt="Pause Baggrund">
     </div>
-
-    <div class="content">
-        <div class="left">
+    <div id="content">
+        <div class="image-container">
+            <img src="MortenHaulikBillede.png" alt="Morten Haulik">
+        </div>
+        <div class="text-container">
+            <div class="menu">
+                <a href="#" data-section="om">Om Morten Haulik</a> -
+                <a href="#" data-section="book">Book som Keynote Speaker</a> -
+                <a href="#" data-section="bestil">Bestil Workshop</a> -
+                <a href="#" data-section="konsulent">XR Konsulent</a> -
+                <a href="#" id="toggleLanguage">English</a>
+            </div>
             <section id="om">
                 <h2>Om Morten Haulik</h2>
                 <p>Morten Haulik er en førende ekspert inden for Virtual Reality (VR), Augmented Reality (AR) og Extended Reality (XR), baseret i København. I det seneste årti har Morten arbejdet professionelt med VR og AR, og hans ekspertise er blevet anerkendt både nationalt og internationalt. Morten har bidraget som ekspert i prominente medier som Ekstrabladet, Jyllandsposten, Børsen, Ingeniøren, Radio4, DR, Berlingske, og mange flere. Han har også spillet en nøglerolle i produktionen af episoden om VR i DR2’s "So Ein Ding".</p>
@@ -58,11 +55,9 @@
                 <p>Hold dig opdateret med Mortens seneste projekter og indsigter ved at følge ham på LinkedIn og Twitter.</p>
             </section>
         </div>
-        <div class="right">
-            <img src="MortenHaulikBillede.png" alt="Morten Haulik">
-        </div>
     </div>
-
+    <audio id="hoverSound" src="hover.wav"></audio>
+    <audio id="clickSound" src="click.mp3"></audio>
     <script src="script.js"></script>
 </body>
 </html>
