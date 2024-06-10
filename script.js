@@ -8,14 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         bestilContent: `Morten tilbyder foredrag og workshops om emner som Virtual Reality, Augmented Reality, fremtidens teknologi og innovation. Uanset om det er for en virksomhed, en konference eller en uddannelsesinstitution, skræddersyr Morten sit indhold til dit publikum. Hans foredrag og workshops er designet til at levere maksimal værdi og indsigt.<br><br>Hvad tidligere kunder siger:<br>"Morten Haulik formåede at fange vores publikums opmærksomhed fra første øjeblik. Hans viden og entusiasme for VR og AR er smittende og inspirerende." – Jens Jensen, Teknologikonference<br>"Morten leverede en fantastisk workshop, der virkelig åbnede vores øjne for mulighederne inden for VR og AR. Hans praktiske tilgang og dybe indsigt gjorde en kæmpe forskel for vores team." – Anna Andersen, Innovationschef`,
         konsulent: `XR Konsulent – Udvikling af Fremtidens Løsninger`,
         konsulentContent: `Som erfaren XR-konsulent hjælper Morten Haulik virksomheder med at udvikle og implementere avancerede XR-løsninger, der lever op til de højeste standarder inden for feltet. Med en dyb forståelse af både teknologien og markedet kan Morten guide dit team gennem hele udviklingsprocessen – fra koncept til færdigt produkt. Hans ekspertise sikrer, at jeres XR-løsninger ikke kun er innovative, men også praktiske og bæredygtige. <a href="mailto:BookMortenHaulik@gmail.com">Klik her</a> for at komme i kontakt med Morten.`,
-        baggrund: `Baggrund`,
-        baggrundContent: `Morten Haulik startede sin rejse i teknologiens verden, mens han studerede Informationsvidenskab på Københavns Universitet. Et hobbyprojekt, hvor han byggede et hjemmebygget Virtual Reality-headset, gik viralt på Facebook og åbnede dørene til en karriere hos Khora Virtual Reality, Europas første VR-produktionsselskab.<br>Siden da har Morten været en fremtrædende figur i det danske startup- og teknologilandskab. I sin nuværende rolle som Entrepreneur in Residence hos Københavns Universitet Lighthouse hjælper han studerende med at omdanne deres forskning til succesfulde startups.`,
-        mentor: `Mentor og Dommer`,
-        mentorContent: `Morten bidrager som mentor og dommer i forskellige innovations- og entreprenørskabsprogrammer, herunder:<br>Fonden for Entreprenørskab<br>Københavns Universitet<br>Alumni<br>Morten har også været involveret i:<br>Founders of Tomorrow<br>Roche NewGen Challenge<br>Venture Cup<br>Tag Order, Dagbladet Information<br>Health Innovators`,
-        podcast: `Podcast Deltagelser`,
-        podcastContent: `Morten har deltaget som ekspert i en række podcasts, hvor han deler sin indsigt og diskuterer de nyeste trends inden for VR, AR og teknologi.`,
-        folg: `Følg Morten Haulik`,
-        folgContent: `Hold dig opdateret med Mortens seneste projekter og indsigter ved at følge ham på LinkedIn og Twitter.`
     };
 
     const englishContent = {
@@ -27,44 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
         bestilContent: `Morten offers talks and workshops on topics like Virtual Reality, Augmented Reality, future technology, and innovation. Whether it's for a company, a conference, or an educational institution, Morten tailors his content to your audience. His presentations and workshops are designed to provide maximum value and insight.<br><br>What Clients Are Saying:<br>"Morten Haulik captivated our audience from the very first moment. His knowledge and enthusiasm for VR and AR are both infectious and inspiring." – Jens Jensen, Tech Conference<br>"Morten delivered an outstanding workshop that really opened our eyes to the possibilities within VR and AR. His practical approach and deep insight made a significant impact on our team." – Anna Andersen, Head of Innovation`,
         konsulent: `XR Consultant – Developing Future Solutions`,
         konsulentContent: `As an experienced XR consultant, Morten Haulik assists companies in developing and implementing advanced XR solutions that meet the highest industry standards. With a deep understanding of both the technology and the market, Morten can guide your team through the entire development process—from concept to finished product. His expertise ensures that your XR solutions are not only innovative but also practical and sustainable. <a href="mailto:BookMortenHaulik@gmail.com">Click here</a> to get in touch with Morten.`,
-        baggrund: `Background`,
-        baggrundContent: `Morten Haulik began his journey into the world of technology while studying Information Science at the University of Copenhagen. A hobby project, where he built a homemade Virtual Reality headset, went viral on Facebook, leading to a career opportunity with Khora Virtual Reality, Europe's first VR production company.<br>Since then, Morten has been a prominent figure in the Danish startup and tech landscape. In his current role as Entrepreneur in Residence at the University of Copenhagen Lighthouse, he helps students turn their research into successful startups.`,
-        mentor: `Mentor and Judge`,
-        mentorContent: `Morten serves as a mentor and judge in various innovation and entrepreneurship programs, including:<br>Fonden for Entreprenørskab<br>University of Copenhagen<br>Alumni<br>Morten has also been involved in:<br>Founders of Tomorrow<br>Roche NewGen Challenge<br>Venture Cup<br>Tag Order, Dagbladet Information<br>Health Innovators`,
-        podcast: `Podcast Appearances`,
-        podcastContent: `Morten has appeared as an expert in numerous podcasts, sharing his insights and discussing the latest trends in VR, AR, and technology.`,
-        folg: `Follow Morten Haulik`,
-        folgContent: `Stay updated with Morten’s latest projects and insights by following him on LinkedIn and Twitter.`
-    };
-
-    const sections = {
-        om: document.getElementById('om'),
-        book: document.getElementById('book'),
-        bestil: document.getElementById('bestil'),
-        konsulent: document.getElementById('konsulent'),
-        baggrund: document.querySelector('section:nth-of-type(5)'),
-        mentor: document.querySelector('section:nth-of-type(6)'),
-        podcast: document.querySelector('section:nth-of-type(7)'),
-        folg: document.querySelector('section:nth-of-type(8)')
     };
 
     const updateContent = (content) => {
-        sections.om.querySelector('h2').textContent = content.om;
-        sections.om.querySelector('p').innerHTML = content.omContent;
-        sections.book.querySelector('h2').textContent = content.book;
-        sections.book.querySelector('p').innerHTML = content.bookContent;
-        sections.bestil.querySelector('h2').textContent = content.bestil;
-        sections.bestil.querySelector('p').innerHTML = content.bestilContent;
-        sections.konsulent.querySelector('h2').textContent = content.konsulent;
-        sections.konsulent.querySelector('p').innerHTML = content.konsulentContent;
-        sections.baggrund.querySelector('h2').textContent = content.baggrund;
-        sections.baggrund.querySelector('p').innerHTML = content.baggrundContent;
-        sections.mentor.querySelector('h2').textContent = content.mentor;
-        sections.mentor.querySelector('p').innerHTML = content.mentorContent;
-        sections.podcast.querySelector('h2').textContent = content.podcast;
-        sections.podcast.querySelector('p').innerHTML = content.podcastContent;
-        sections.folg.querySelector('h2').textContent = content.folg;
-        sections.folg.querySelector('p').innerHTML = content.folgContent;
+        document.querySelector('#om h2').textContent = content.om;
+        document.querySelector('#om p').innerHTML = content.omContent;
+        document.querySelector('#book h2').textContent = content.book;
+        document.querySelector('#book p').innerHTML = content.bookContent;
+        document.querySelector('#bestil h2').textContent = content.bestil;
+        document.querySelector('#bestil p').innerHTML = content.bestilContent;
+        document.querySelector('#konsulent h2').textContent = content.konsulent;
+        document.querySelector('#konsulent p').innerHTML = content.konsulentContent;
     };
 
     let isEnglish = false;
@@ -92,4 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
             clickSound.play();
         });
     });
+
+    let timeout;
+    const pauseOverlay = document.getElementById('pause-overlay');
+    const resetTimeout = () => {
+        clearTimeout(timeout);
+        pauseOverlay.style.display = 'none';
+        timeout = setTimeout(() => {
+            pauseOverlay.style.display = 'flex';
+        }, 20000);
+    };
+
+    resetTimeout();
+    document.addEventListener('mousemove', resetTimeout);
+    document.addEventListener('keypress', resetTimeout);
 });
